@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #EB578B, #ED566E);
+    margin: 0px;
+    height: 100vh;
+}

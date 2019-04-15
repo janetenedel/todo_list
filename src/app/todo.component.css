@@ -1,0 +1,73 @@
+.white-square {
+    width: 350px;
+    /* height: 300px; */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+
+}
+
+.pink {
+    background-color: #EB69B2;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 35px;
+    color: white;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pink-outline {
+    border: #EB69B2 1px solid;
+    color: #EB69B2;
+    border-radius: 3px;
+    margin-right: 8px;
+    margin-left: 3px; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: lightgray 1px solid;
+    margin: 0px;
+    text-align: center;
+}
+
+p, input, ol, li {
+    font-size: 13px;
+}
+
+li {
+    line-height: 2;
+    color: black;
+}
+
+ol {
+    padding-inline-start: 20px;
+}
+
+.align-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .aligned-items {
+    display: inline;
+} */
+
+.delete-button {
+    margin-top: 7px;
+    border: none;
+    padding: 0px;
+    font-size: 17px;
+}
+
+.strike-through {
+    text-decoration: line-through;
+}

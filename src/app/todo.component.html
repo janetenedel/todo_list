@@ -1,0 +1,35 @@
+<div class="white-square">
+  <h1>
+    {{ title }}!
+  </h1>
+  <p>A place to store the things you have to do!</p>
+
+  <input name="filterTask" [(ngModel)]="filterTask" type="text" placeholder="Filter your to-dos" (input)="taskMatch($event)"/>
+  
+  <p *ngIf="taskMatching === true"> {{item.task}} </p>
+
+
+  <ol>
+
+    <li [ngClass]="classList" *ngFor="let item of filteredTodos; trackBy: trackByTask; let i = index">
+
+      <div class="align-list">
+
+        <span class="aligned-items" [ngClass] = "{'strike-through': item.completed === true}">
+          <span *ngIf="!item.completed"><button class="pink-outline" (click)="completeTask(i)">Complete</button></span>
+          {{ item.task | lowercase }}
+        </span>
+
+        <span class="aligned-items">
+          <button class="delete-button" (click)="removeTask(Todo)">&#9747;</button>
+        </span>
+      </div>
+    </li>
+
+  </ol>
+
+
+  <input name="taskInput" [(ngModel)]="taskInput" type="text" placeholder="Add your to-do" />
+  <button class="pink" (click)="addTask()">Add</button>
+
+</div>
