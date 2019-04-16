@@ -30,8 +30,9 @@ export class TodoComponent {
     filteredTodos = [...this.toDoList];
 
   taskMatch = () => {
+    const lower = this.filterTask ? this.filterTask.toLowerCase(): '';
     this.filteredTodos = this.toDoList.filter(Todo => 
-      Todo.task.toLowerCase().includes(this.filterTask.toLowerCase()));
+      Todo.task.toLowerCase().includes(lower));
     console.log(this.toDoList);
   }
 
